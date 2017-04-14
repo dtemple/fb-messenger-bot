@@ -40,6 +40,8 @@ def webhook():
                     message_text = messaging_event["message"]["text"]  # the message's text
 
                     send_message(sender_id, "welcome to your new bot")
+                    send_message(sender_id, "this is all I can do right now")
+                    send_message(sender_id, "not very fancy, I know. but the plumbing works.")
 
                 if messaging_event.get("delivery"):  # delivery confirmation
                     pass
