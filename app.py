@@ -42,10 +42,6 @@ def webhook():
                     send_message(sender_id, "welcome to your new bot")
                     send_message(sender_id, "this is all I can do right now")
                     send_message(sender_id, "not very fancy, I know. but the plumbing works.")
-                    send_message(sender_id, "tell me your name")
-
-                if messaging_event.get("message")=="matt":
-                    send_message(sender_id, "matt smells")
 
                 if messaging_event.get("delivery"):  # delivery confirmation
                     pass
